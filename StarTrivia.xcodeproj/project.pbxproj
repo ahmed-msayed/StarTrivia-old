@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		623B4283255579D30050B785 /* BlackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B4282255579D30050B785 /* BlackBgView.swift */; };
+		623B428625557A720050B785 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B428525557A720050B785 /* Constants.swift */; };
+		62674BDD256BB32800BC16B6 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62674BDC256BB32800BC16B6 /* PersonApi.swift */; };
+		627D1440256EFDC000AA152E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D143F256EFDC000AA152E /* Person.swift */; };
+		62840DA92552F8CA0084B1D8 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62840DA82552F8CA0084B1D8 /* Starjedi.ttf */; };
+		62840DAB2552F8D80084B1D8 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62840DAA2552F8D80084B1D8 /* Starjhol.ttf */; };
+		62840DAD2552F8EC0084B1D8 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 62840DAC2552F8EC0084B1D8 /* Starjout.ttf */; };
 		6298B9B72550AF5500A017C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298B9B62550AF5500A017C9 /* AppDelegate.swift */; };
 		6298B9B92550AF5500A017C9 /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6298B9B82550AF5500A017C9 /* SelectPersonVC.swift */; };
 		6298B9BC2550AF5500A017C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6298B9BA2550AF5500A017C9 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		623B4282255579D30050B785 /* BlackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBgView.swift; sourceTree = "<group>"; };
+		623B428525557A720050B785 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		62674BDC256BB32800BC16B6 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		627D143F256EFDC000AA152E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		62840DA82552F8CA0084B1D8 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		62840DAA2552F8D80084B1D8 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		62840DAC2552F8EC0084B1D8 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		6298B9B32550AF5400A017C9 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6298B9B62550AF5500A017C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6298B9B82550AF5500A017C9 /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
@@ -35,6 +49,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		623B428425557A610050B785 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				623B428525557A720050B785 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		62674BDB256BB2EE00BC16B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				62674BDC256BB32800BC16B6 /* PersonApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62840DAE2552F9050084B1D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				62840DA82552F8CA0084B1D8 /* Starjedi.ttf */,
+				62840DAA2552F8D80084B1D8 /* Starjhol.ttf */,
+				62840DAC2552F8EC0084B1D8 /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		62840DAF2552F93C0084B1D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62840DAE2552F9050084B1D8 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62840DB02552F94E0084B1D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6298B9B62550AF5500A017C9 /* AppDelegate.swift */,
+				6298B9B82550AF5500A017C9 /* SelectPersonVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		62840DB12552F9570084B1D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				623B4282255579D30050B785 /* BlackBgView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62840DB22552F95D0084B1D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				627D143F256EFDC000AA152E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6298B9AA2550AF5400A017C9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +127,12 @@
 		6298B9B52550AF5500A017C9 /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
-				6298B9B62550AF5500A017C9 /* AppDelegate.swift */,
-				6298B9B82550AF5500A017C9 /* SelectPersonVC.swift */,
+				62840DB22552F95D0084B1D8 /* Model */,
+				62840DB12552F9570084B1D8 /* View */,
+				62840DB02552F94E0084B1D8 /* Controller */,
+				62674BDB256BB2EE00BC16B6 /* Services */,
+				623B428425557A610050B785 /* Utilities */,
+				62840DAF2552F93C0084B1D8 /* Resources */,
 				6298B9BA2550AF5500A017C9 /* Main.storyboard */,
 				6298B9BD2550AF5700A017C9 /* Assets.xcassets */,
 				6298B9BF2550AF5700A017C9 /* LaunchScreen.storyboard */,
@@ -124,6 +201,9 @@
 			files = (
 				6298B9C12550AF5700A017C9 /* LaunchScreen.storyboard in Resources */,
 				6298B9BE2550AF5700A017C9 /* Assets.xcassets in Resources */,
+				62840DA92552F8CA0084B1D8 /* Starjedi.ttf in Resources */,
+				62840DAB2552F8D80084B1D8 /* Starjhol.ttf in Resources */,
+				62840DAD2552F8EC0084B1D8 /* Starjout.ttf in Resources */,
 				6298B9BC2550AF5500A017C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627D1440256EFDC000AA152E /* Person.swift in Sources */,
 				6298B9B92550AF5500A017C9 /* SelectPersonVC.swift in Sources */,
 				6298B9B72550AF5500A017C9 /* AppDelegate.swift in Sources */,
+				623B4283255579D30050B785 /* BlackBgView.swift in Sources */,
+				62674BDD256BB32800BC16B6 /* PersonApi.swift in Sources */,
+				623B428625557A720050B785 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
